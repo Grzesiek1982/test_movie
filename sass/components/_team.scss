@@ -1,0 +1,109 @@
+.team {
+  background: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  width: 100%;
+
+  &__list {
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @media (min-width: $tablet) {
+      max-width: 768px;
+      flex-direction: row;
+    }
+
+    @media (min-width: $desktop) {
+      flex-wrap: nowrap;
+      max-width: 1200px;
+      padding: 0;
+    }
+  }
+
+  &__item {
+    background: #ffffff;
+    width: 100%;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 20px;
+
+    @media (min-width: $mobile) {
+      max-width: 450px;
+    }
+
+    @media (min-width: $tablet) {
+      max-width: 354px;
+    }
+
+    @media (min-width: $desktop) {
+      max-width: 270px;
+    }
+  }
+
+  &__name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+
+  &__img {
+    display: block;
+    margin-bottom: 30px;
+    max-width: 100%;
+  }
+
+  &__position {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #757575;
+    padding-bottom: 30px;
+  }
+
+  &__social {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    padding: 0;
+  }
+
+  &__ico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    gap: 5px;
+    fill: #afb1b8;
+    transition-property: fill;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+      fill: var(--third-color);
+      background-color: var(--main-color);
+    }
+  }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <header>
+     
+    </header>
+    <main>
+      
+        <h1>EFEKTYWNE ROZWIĄZANIA <br />DLA WASZEGO BIZNESU</h1>
+        <button type="button" class="button" data-modal-open>
+          PLAKAT
+        </button>
+
+        <div class="modal is-hidden" data-modal>
+          <div class="modal__box">
+            <!-- <button class="button__close" data-modal-close>
+              <span>X</span>
+            </button> -->
+            <div class="modal__close" data-modal-close>
+              <svg width="14" height="14">
+                <use href="../test movie/sass/components/symbol-defs.svg#icon-close"></use>
+              </svg>
+            </div>
+            <div class="LEFT">
+              <img
+              class="modal__poster"
+              src="./images/poster.jpg"
+              alt="plakat filmu"
+              srcset="
+                ./images/poster_x2.jpg    370w,
+                ./images/poster_x3.jpg 740w
+              "
+              sizes="(min-width: 1200px) 370px"
+            /></div>
+            
+            <div class="RIGHT">
+              <div class="modal__tittle-film">A Fistful of lead</div>
+              <div class="modal__details">
+                <div class="modal__details-left">
+                <ul class="modal__list modal__list-left">
+                  <li>Vote / Votes</li>
+                  <li>Popularity</li>
+                  <li>Original Title</li>
+                  <li>Genre</li>
+                </ul>
+              </div>
+                <div class="modal__details-right">
+                  <ul class="modal__list modal__list-right">
+                    <li><span class="modal__vote-details">7.3</span><span class="modal__list-left">/</span><span class="modal__vote-summary">1280</span></li>
+                    <li>100.2</li>
+                    <li>A Fistful of lead</li>
+                    <li>Western </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="modal__tittle-describe-tittle">About</div>
+              <p class="modal__tittle-describe">Four of the West’s most infamous outlaws assemble to steal a huge stash of gold from the most corrupt settlement of the gold rush towns. But not all goes to plan one is killed and the other three escapes with bags of gold hide out in the abandoned gold mine where they happen across another gang of three – who themselves were planning to hit the very same bank! As tensions rise, things go from bad to worse as they realise the bags of gold are filled with lead... they’ve been double crossed – but by who and how?</p>
+<div class="modal__buttons">
+  <button class="modal__button-watched">add to Watched</button>
+  <button class="modal__button-queue">add to queue</button>
+</div>
+            </div>
+            
+          </div>
+        </div>
+      
+
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+
+
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+.button {
+  background: var(--main-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--third-color);
+  padding: 10px 42px;
+  cursor: pointer;
+  border: 0px;
+  transition-duration: 250ms;
+  transition-property: background-color, color, box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    background-color: var(--main-color);
+    color: var(--third-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.button--portfolio {
+  background-color: #f5f4fa;
+  color: var(--secondary-color);
+  box-shadow: none;
+  padding: 6px 22px;
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+
+  &:focus,
+  &:hover {
+    background-color: var(--main-color);
+    color: var(--third-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.button--footer {
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 80px;
+  position: relative;
+  margin-top: 20px;
+  margin-right: 0;
+
+  @media (min-width: $desktop) {
+    margin-left: 12px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 280px;
+  }
+}
+
+.button--modal {
+  display: block;
+  margin: 0 auto;
+}
+
+.footer__button-icon {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+  position: absolute;
+  right: 40px;
+  cursor: pointer;
+}
+
+.button__close {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.button__burger {
+  cursor: pointer;
+  background-color: white;
+  position: absolute;
+  right: 23px;
+  border: none;
+  outline: none;
+}

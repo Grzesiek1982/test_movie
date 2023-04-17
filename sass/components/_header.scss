@@ -1,0 +1,101 @@
+.header {
+  border-bottom: #ececec 1px solid;
+  height: 60px;
+  display: flex;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  // padding-left: 15px;
+
+  @media (min-width: $tablet) {
+    height: 100px;
+    position: relative;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (min-width: $tablet) {
+      width: 1200px;
+    }
+  }
+
+  &__menu-left {
+    list-style: none;
+    display: none;
+    gap: 50px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    align-items: center;
+    color: var(--secondary-color);
+
+    @media (min-width: $tablet) {
+      display: flex;
+    }
+  }
+
+  &__menu-right {
+    list-style: none;
+    display: none;
+    gap: 50px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    align-items: center;
+    color: var(--secondary-color);
+
+    @media (min-width: $tablet) {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      align-items: flex-start;
+      // padding-right: 20px;
+    }
+
+    @media (min-width: $desktop) {
+      flex-direction: row;
+      gap: 50px;
+      align-items: center;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (min-width: $tablet) {
+      gap: 50px;
+    }
+  }
+
+  &__burger {
+    cursor: pointer;
+  }
+
+  &__hover {
+    fill: var(--secondary-color);
+
+    &:focus,
+    &:hover {
+      fill: var(--main-color);
+    }
+  }
+
+  &__ico {
+    margin-right: 8px;
+  }
+
+  &__contact {
+    display: flex;
+  }
+}
